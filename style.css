@@ -1,0 +1,121 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	box-sizing: border-box;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(-30deg, #2fe256, #19cddd, #410fe7, #d8167a);
+	background-size: 100% 100%;
+	animation: backgroundGradient 10s ease infinite;
+}
+@keyframes backgroundGradient {
+	0% {
+		background-position: 0% 0%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 0%;
+	}
+}
+
+.header {
+	margin-top: 30px;
+	text-align: center;
+	font-family: cursive;
+	font-size: 40px;
+	font-weight: bold;
+	color: rgb(195, 27, 233);
+	text-shadow: 0 0 10px rgb(149, 87, 142);
+}
+
+.wrapper {
+	height: 50vh;
+	width: 90vw;
+	border: 30px solid rgb(0, 255, 251);
+	border-radius: 30px;
+	box-shadow: 0 0 20px rgb(0, 255, 30);
+	margin: auto;
+	margin-top: 30px;
+}
+
+.container {
+	display: grid;
+	background-color: aliceblue;
+	grid-template-columns: repeat(16, 1fr); /*repeat(var(--quantity), 1fr);*/
+	grid-template-rows: repeat(16, 1fr); /*repeat(var(--quantity), 1fr);*/
+	height: 100%;
+	width: 100%;
+	margin: auto;
+	box-shadow: 0 0 10px rgb(29, 93, 149);
+}
+
+.cell {
+	border: 0.2px solid lightgray;
+	background-color: aliceblue;
+	width: auto;
+	height: auto;
+}
+
+/* buttons */
+
+.buttons {
+	display: flex;
+	justify-content: space-evenly;
+	text-align: center;
+	margin-top: 40px;
+}
+
+.buttons .btn {
+	margin-top: 5px;
+	font-family: cursive;
+	color: rgb(22, 33, 151);
+	background-color: rgb(75, 234, 75);
+	background-repeat: no-repeat;
+	border: 2px solid rgb(22, 33, 151);
+	border-radius: 8px;
+	font-weight: bold;
+	padding: 10px 25px;
+	overflow: hidden;
+	outline: none;
+	cursor: pointer;
+}
+
+.buttons .btn:hover {
+	border-radius: 25px;
+	transition: 0.25s;
+}
+
+.buttons .btn:focus {
+	border-radius: 25px;
+	text-shadow: 0 0 10px rgb(137, 72, 234);
+	transform: scale(1.2);
+	border: 1px solid rgb(175, 31, 151);
+	animation: scale-elm 500ms ease infinite alternate;
+	box-shadow: 0 0 2px 2px rgb(175, 31, 151);
+	transform: 100ms;
+}
+
+/* footer */
+
+footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 4px;
+	width: 100%;
+	padding: 0;
+	font-size: 15px;
+	margin-bottom: 10px;
+}
