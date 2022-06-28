@@ -1,0 +1,22 @@
+{
+	"name": "etch-a-sketch",
+	"version": "1.0.0",
+	"description": "",
+	"main": "app.js",
+	"scripts": {
+		"nodemon": "nodemon app.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/bostonbob0007/etch-a-sketch.git"
+	},
+	"keywords": [
+		"prettier"
+	],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"prettier": "2.2.1"
+	},
+	"homepage": "https://github.com/bostonbob0007/etch-a-sketch#readme"
+}
